@@ -1,0 +1,39 @@
+Estruturas de repetição
+
+Toda estrutura de repetição contém 3 partes:
+- inicialização da variavel de controle;
+- condição/critério de parada;
+- mudança de estado da variável de controle.
+
+Exemplo: Mostrar todos os números pares no intervalo entre 1 e 1000.
+
+Podemos fazer com a instrução while (enquanto, do Portugol):
+
+$i = 2; // Começa em 2 pois estamos interessados nos pares e 2 é o primeiro par no intervalo.
+
+while($i<=1000){ // Enquanto o conteúdo de i for menor ou igual a 1000, faz o que está dentro do bloco.
+   
+echo $i;
+   $i=$i+1; // Incremento, para mudar o estado da variável de controle e não deixar que um loop infinito aconteça.
+
+} // Quando o bloco encerra, o programa volta para o teste da condição.
+
+--------------
+
+Resolvendo o mesmo problemas com a instrução for (para, do Portugol):
+
+for($i=2; $i<=1000; i=i+2){
+   echo $i;
+}
+
+--------------
+
+Outra forma de resolver o problema, percorrendo todo o intervalo de 1 a 1000 e verificando número a número se é par ou não, através do módulo (%, retorna o resto de uma divisão inteira).
+
+$i = 1
+while($i<=1000){
+   if($i%2 == 0){
+      echo $i;
+   }
+   $i=$i+1
+}  
