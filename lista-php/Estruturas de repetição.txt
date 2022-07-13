@@ -1,26 +1,26 @@
-Estruturas de repetição
+Estruturas de repetiÃ§Ã£o
 
-Toda estrutura de repetição contém 3 partes:
-- inicialização da variavel de controle;
-- condição/critério de parada;
-- mudança de estado da variável de controle.
+Toda estrutura de repetiÃ§Ã£o contÃ©m 3 partes:
+- inicializaÃ§Ã£o da variavel de controle;
+- condiÃ§Ã£o/critÃ©rio de parada;
+- mudanÃ§a de estado da variÃ¡vel de controle.
 
-Exemplo: Mostrar todos os números pares no intervalo entre 1 e 1000.
+Exemplo: Mostrar todos os nÃºmeros pares no intervalo entre 1 e 1000.
 
-Podemos fazer com a instrução while (enquanto, do Portugol):
+Podemos fazer com a instruÃ§Ã£o while (enquanto, do Portugol):
 
-$i = 2; // Começa em 2 pois estamos interessados nos pares e 2 é o primeiro par no intervalo.
+$i = 2; // ComeÃ§a em 2 pois estamos interessados nos pares e 2 Ã© o primeiro par no intervalo.
 
-while($i<=1000){ // Enquanto o conteúdo de i for menor ou igual a 1000, faz o que está dentro do bloco.
+while($i<=1000){ // Enquanto o conteÃºdo de i for menor ou igual a 1000, faz o que estÃ¡ dentro do bloco.
    
-echo $i;
-   $i=$i+1; // Incremento, para mudar o estado da variável de controle e não deixar que um loop infinito aconteça.
+   echo $i;
+   $i=$i+1; // Incremento, para mudar o estado da variÃ¡vel de controle e nÃ£o deixar que um loop infinito aconteÃ§a.
 
-} // Quando o bloco encerra, o programa volta para o teste da condição.
+} // Quando o bloco encerra, o programa volta para o teste da condiÃ§Ã£o.
 
 --------------
 
-Resolvendo o mesmo problemas com a instrução for (para, do Portugol):
+Resolvendo o mesmo problemas com a instruÃ§Ã£o for (para, do Portugol):
 
 for($i=2; $i<=1000; i=i+2){
    echo $i;
@@ -28,7 +28,7 @@ for($i=2; $i<=1000; i=i+2){
 
 --------------
 
-Outra forma de resolver o problema, percorrendo todo o intervalo de 1 a 1000 e verificando número a número se é par ou não, através do módulo (%, retorna o resto de uma divisão inteira).
+Outra forma de resolver o problema, percorrendo todo o intervalo de 1 a 1000 e verificando nÃºmero a nÃºmero se Ã© par ou nÃ£o, atravÃ©s do mÃ³dulo (%, retorna o resto de uma divisÃ£o inteira).
 
 $i = 1
 while($i<=1000){
